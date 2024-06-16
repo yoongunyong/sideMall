@@ -3,3 +3,6 @@ spring:
     name: sideMall
 server:
   port: 8081
+
+jwt:
+  secret: hello.sideMall

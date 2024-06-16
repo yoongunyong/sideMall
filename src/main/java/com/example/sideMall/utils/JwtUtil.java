@@ -9,8 +9,8 @@ import java.util.Date;
 
 public class JwtUtil {
 
-    private static String createJwt(String userName, String secretKey, Long expiredMs) {
-        Claims claims = (Claims)Jwts.claims();
+    public static String createJwt(String userName, String secretKey, Long expiredMs) {
+        Claims claims = (Claims) Jwts.claims();
         claims.put("userName", userName);
 
         return Jwts.builder()
